@@ -76,6 +76,8 @@ padding-left: 0;}
     color: white;
     display: inline-block;
 }
+
+.swal2-container{z-index: 100000000000000;}
 .preloader {
   position: absolute;
   top: 0;
