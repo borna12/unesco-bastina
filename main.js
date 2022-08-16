@@ -58,7 +58,7 @@ SOFTWARE.*/
 let geomURL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vRCip2W1fRY266HT33kuiBA3W9FXT7Ar8kb6DJj9Q6eczWEj4Vovqf84u7Wzcnou5XI8chf_O4Bu8ce/pub?output=csv";
 let pointsURL =
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRf8Cz2t9SxhPNiaocbdGBzbCxjCYwQElLKPcpVdi4S7AMNQT4BTIHXp6jbTH15l_0ZLja7SVaXFjsC/pub?output=csv";
+  "test.csv";
 
 window.addEventListener("DOMContentLoaded", init);
 
@@ -115,7 +115,7 @@ sidebar.addPanel({
   id: 'click',
   tab: '<i class="fa fa-info"></i>',
   title: "<h2 id='sidebar-title'>Info</h2>",
-  pane: "<p> <ul id='sidebar-content3'></ul></p>",
+  pane: "<h3>Karta svjetske prirodne i kulturne baštine</h3><p style='padding-right:50px;text-align:justify'>Karta koja prikazuje lokacije svih prirodnih i kulturnih dobra koja su međunarodno priznata te koja su izvanredne i univerzalne vrijednosti koja su kao takva podvrgnuta i posebnomu režimu zaštite i očuvanja. <br><a href='https://enciklopedija.hr/natuknica.aspx?ID=59130'>doznaj više...</a></p><p></p><p>&copy;2022&nbsp;Leksikografski zavod Miroslav Krleža. <br>Sva prava pridržana.</p><p><strong>Urednice<br></strong>Irina Starčević Stančić (voditeljica), Cvijeta Kraus</p><p><strong>Programsko-informatička rje&scaron;enja i upis podataka</strong><br>Josip Mihaljević</p>",
 });
 
   map.on("click", function () {
@@ -134,6 +134,9 @@ sidebar.addPanel({
     header: true,
     complete: addPoints,
   });
+  var s = document.getElementsByClassName('preloader')[0].style;
+s.opacity = 1;
+(function fade(){(s.opacity-=.1)<0?s.display="none":setTimeout(fade,40)})();
 }
 
 /*
