@@ -272,7 +272,8 @@ function addPoints(data) {
           html:
             '<img src="'+data[row].img+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"><a href="'+data[row].link+'" target="_blank">doznaj više</a></p>',
           showCloseButton: true,
-          confirmButtonText: "zatvori"
+          confirmButtonText: "zatvori",
+          confirmButtonColor: "#0074d9"
         })}
         else{
           Swal.fire({
@@ -280,7 +281,8 @@ function addPoints(data) {
             html:
               '<img src="'+data[row].img+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"></p>',
             showCloseButton: true,
-            confirmButtonText: "zatvori"
+            confirmButtonText: "zatvori",
+            confirmButtonColor: "#0074d9"
           })
         }     
       },
