@@ -133,3 +133,7 @@ li.kulturna_i_prirodna_baština::before {
   left: 50px;
   padding-top: 10px;
 }
+
+.leaflet-right {
+  right: 0px!important;
+}

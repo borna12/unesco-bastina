@@ -251,7 +251,7 @@ function addPoints(data) {
       properties: {
         name: data[row].name,
         description: data[row].description,
-        img: data[row].img,
+        img: data[row].img2,
         link: data[row].link,
         id: data[row].name,
       },
@@ -270,7 +270,7 @@ function addPoints(data) {
         Swal.fire({
           title: '<strong>'+data[row].name+'</strong>',
           html:
-            '<img src="'+data[row].img+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"><a href="'+data[row].link+'" target="_blank">doznaj više</a></p>',
+            '<img src="./img/slika/'+data[row].img2+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"><a href="'+data[row].link+'" target="_blank">doznaj više</a></p>',
           showCloseButton: true,
           confirmButtonText: "zatvori",
           confirmButtonColor: "#0074d9"
@@ -279,7 +279,7 @@ function addPoints(data) {
           Swal.fire({
             title: '<strong>'+data[row].name+'</strong>',
             html:
-              '<img src="'+data[row].img+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"></p>',
+              '<img src="./img/slika/'+data[row].img2+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"></p>',
             showCloseButton: true,
             confirmButtonText: "zatvori",
             confirmButtonColor: "#0074d9"
