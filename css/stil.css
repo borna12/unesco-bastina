@@ -20,7 +20,7 @@ padding-left: 0;}
 .leaflet-shadow-pane{display: none!important;}
 #sidebar-content a{cursor: pointer;}
 .leaflet-sidebar{transition: height .3s ease-in-out;}
-.collapsed{transition: height .3s ease-in-out; height: 120px;}
+.collapsed{transition: height .3s ease-in-out; height: 80px;}
 
 .hidden{display: none;}
 /*.leaflet-sidebar{display:none}*/
@@ -90,10 +90,14 @@ padding-left: 0;}
   background-color: #FFF;
   background-position: center;
 }
-.span-prirodna_baština{margin-left: 35%;}
-.span-kulturna_baština{margin-left: 30%;}
-.span-kulturna_i_prirodna_baština{margin-left: 20%;margin-top: 20%;}
-
+.leaflet-bar .tag-filter-tags-container ul li a{color:black}
+.leaflet-bar .tag-filter-tags-container ul {border: 1px solid #0074d9}
+.span-prirodna_baština{margin-left: 30%;
+  margin-top: 15%;}
+.span-kulturna_baština{margin-left: 25%;
+  margin-top: 20%;}
+.span-kulturna_i_prirodna_baština{    margin-left: 30%;
+  margin-top: 20%;}
 .span-prirodna_baština::after{content: "○";}
 .span-kulturna_baština::after{content:"◇"}
 .span-kulturna_i_prirodna_baština::after{
@@ -112,9 +116,10 @@ li.prirodna_baština{
   list-style-type: "○";
 }
 
-
-
-
+.leaflet-bar .tag-filter-tags-container ul.header li a{padding: 0}
+.fa{line-height:2}
+.leaflet-sidebar-tabs .fa{line-height:2.5}
+.fa-10x{line-height:1.5}
 li.kulturna_i_prirodna_baština {
   list-style-type: none;
 }
@@ -137,3 +142,10 @@ li.kulturna_i_prirodna_baština::before {
 .leaflet-right {
   right: 0px!important;
 }
+.filter-info-box{display:none!important}
+.tag-filter-tags-container a{width: 100px!important;
+  text-align: left!important;line-height: 2.8!important}
+  .tag-filter-tags-container a:first-child{text-align: center!important;padding-top: 5px!important}
+  .tag-filter-tags-container .ripple:last-child a{line-height: 1.5!important;}
+
+
