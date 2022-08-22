@@ -109,14 +109,14 @@ padding-left: 0;}
     content:"";}
 
 li.kulturna_baština{
-  list-style-type: "◇";
+  list-style-type: "◇ ";
 }
 
 li.prirodna_baština{
-  list-style-type: "○";
+  list-style-type: "○ ";
 }
 
-.leaflet-bar .tag-filter-tags-container ul.header li a{padding: 0}
+
 .fa{line-height:2}
 .leaflet-sidebar-tabs .fa{line-height:2.5}
 .fa-10x{line-height:1.5}
@@ -135,7 +135,7 @@ li.kulturna_i_prirodna_baština::before {
   background-repeat: no-repeat;   
   background-position: center center;
   vertical-align: middle;
-  left: 50px;
+  left: 47px;
   padding-top: 10px;
 }
 
@@ -145,7 +145,25 @@ li.kulturna_i_prirodna_baština::before {
 .filter-info-box{display:none!important}
 .tag-filter-tags-container a{width: 100px!important;
   text-align: left!important;line-height: 2.8!important}
-  .tag-filter-tags-container a:first-child{text-align: center!important;padding-top: 5px!important}
-  .tag-filter-tags-container .ripple:last-child a{line-height: 1.5!important;}
+  .tag-filter-tags-container .header a:first-child{text-align: center!important;padding-top: 15px!important}
+  .tag-filter-tags-container .ripple:last-child a{line-height: 0!important;}
+  
+  .tag-filter-tags-container .ripple:last-child a::before{ content: '  ';   
+    display: inline-block; 
+    height: 10px;   
+    width: 10px;    
+    background-size: 10px;   
+    background-image: url('../img/kul-pri2.png'); 
+    background-repeat: no-repeat;   
+    background-position: center center;
+    vertical-align: middle;
+    padding-top: 22px;}
+  .tag-filter-tags-container .ripple:nth-child(1) a::before{content: "◇ ";}
+  .tag-filter-tags-container .ripple:nth-child(2) a::before{    content: "○ ";}
+
+  .tag-filter-tags-container .header a:first-child::before{display: none;}
+
+
+
 
 
