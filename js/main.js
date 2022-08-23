@@ -419,12 +419,15 @@ function addPoints(data) {
         document.getElementById("sidebar-content").innerHTML =
           e.target.feature.properties.description;
         sidebar.open(panelID);*/
+        if(data[row].img2.length>3){
+        slika='<img src="./img/slika/'+data[row].img2+'"></img>'}
+        else{slika=""}
        if (data[row].link.length>3){
-   
+        
         Swal.fire({
           title: '<strong>'+data[row].name+'</strong>',
           html:
-            '<img src="./img/slika/'+data[row].img2+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"><a href="'+data[row].link+'" target="_blank">doznaj više</a></p>',
+          slika+'<p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"><a href="'+data[row].link+'" target="_blank">doznaj više</a></p>',
           showCloseButton: true,
           confirmButtonText: "zatvori",
           confirmButtonColor: "#0074d9"
@@ -433,7 +436,7 @@ function addPoints(data) {
           Swal.fire({
             title: '<strong>'+data[row].name+'</strong>',
             html:
-              '<img src="./img/slika/'+data[row].img2+'"><p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"></p>',
+            slika+'<p style="text-align:justify">'+data[row].description+'</p><p style="text-align:center;"></p>',
             showCloseButton: true,
             confirmButtonText: "zatvori",
             confirmButtonColor: "#0074d9"
@@ -470,12 +473,16 @@ function addPoints(data) {
 }
 
 function funkcija(e){
-
+  
+  if (e.getAttribute("data-img").length<3){
+    slika=""
+  }
+  else{slika='<img src="./img/slika/'+e.getAttribute("data-img")+'">'}
     if (e.getAttribute("data-link").length>3){
     Swal.fire({
       title: '<strong>'+e.innerHTML+'</strong>',
       html:
-      '<img src="./img/slika/'+e.getAttribute("data-img")+'"><p style="text-align:justify">'+e.getAttribute("data-opis")+'</p><p style="text-align:center;"></p><a href="'+e.getAttribute("data-link")+'" target="_blank">doznaj više</a>',
+      slika+'<p style="text-align:justify">'+e.getAttribute("data-opis")+'</p><p style="text-align:center;"></p><a href="'+e.getAttribute("data-link")+'" target="_blank">doznaj više</a>',
       showCloseButton: true,
       confirmButtonText: "zatvori",
       confirmButtonColor: "#0074d9"
@@ -483,7 +490,7 @@ function funkcija(e){
   else{Swal.fire({
     title: '<strong>'+e.innerHTML+'</strong>',
     html:
-    '<img src="./img/slika/'+e.getAttribute("data-img")+'"><p style="text-align:justify">'+e.getAttribute("data-opis")+'</p><p style="text-align:center;"></p>',
+    slika+'<p style="text-align:justify">'+e.getAttribute("data-opis")+'</p><p style="text-align:center;"></p>',
     showCloseButton: true,
     confirmButtonText: "zatvori",
     confirmButtonColor: "#0074d9"
