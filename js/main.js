@@ -223,6 +223,8 @@ var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     .setView([51.5, -0.1], 2)
   .addLayer(osm);
 
+
+  
   sidebar = L.control
     .sidebar({
       container: "sidebar",
