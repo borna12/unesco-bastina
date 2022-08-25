@@ -219,11 +219,18 @@ var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 
 
 // initialize the map on the "map" div with a given center and zoom
- releatedUsageMap = L.map('releated-usage-map')
-    .setView([51.5, -0.1], 2)
+ releatedUsageMap = L.map('releated-usage-map',{minZoom: 3})
+    .setView([20, 0], 3)
   .addLayer(osm);
 
-
+  var southWest = L.latLng(-90, -190),
+  northEast = L.latLng(90, 190);
+  var bounds = L.latLngBounds(southWest, northEast);
+  
+  releatedUsageMap.setMaxBounds(bounds);
+  releatedUsageMap.on('drag', function() {
+    releatedUsageMap.panInsideBounds(bounds, { animate: false });
+  });
   
   sidebar = L.control
     .sidebar({
