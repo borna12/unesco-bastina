@@ -214,7 +214,7 @@ var osmUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery
   osm = L.tileLayer(osmUrl, {
     maxZoom: 19,
     attribution:
-        "&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community &copy; <a href='https://www.lzmk.hr/'>LZMK</a>",
+        "&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP i GIS User Community &copy; <a href='https://www.lzmk.hr/'>LZMK</a>",
   });
 
 
