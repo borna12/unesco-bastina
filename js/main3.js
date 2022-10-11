@@ -219,7 +219,7 @@ var osmUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Physica
 
 
 // initialize the map on the "map" div with a given center and zoom
- releatedUsageMap = L.map('releated-usage-map',{minZoom: 3})
+ releatedUsageMap = L.map('releated-usage-map',{minZoom: 3, maxZoom: 8})
     .setView([20, 0], 3)
   .addLayer(osm);
 
