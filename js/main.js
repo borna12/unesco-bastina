@@ -209,12 +209,12 @@ L.Control.TagFilterButton.include({
 // Adapted from TagFilterButton demo
 // https://github.com/maydemirx/leaflet-tag-filter-button/blob/0.0.4/docs/assets/js/main.js
 ////////////////////////////////////////////////
-var osmUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
   
   osm = L.tileLayer(osmUrl, {
     maxZoom: 19,
     attribution:
-        "&copy; Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP i GIS User Community &copy; <a href='https://www.lzmk.hr/'>LZMK</a>",
+        "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> &copy; <a href='https://www.lzmk.hr/'>LZMK</a>",
   });
 
 
