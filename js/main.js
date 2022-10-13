@@ -482,7 +482,6 @@ function addPoints(data) {
 
 function funkcija(e){
   releatedUsageMap.setView([e.getAttribute("data-lat"), e.getAttribute("data-lon")], 8);
-
   if (e.getAttribute("data-img").length<3){
     slika=""
   }
