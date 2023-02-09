@@ -115,7 +115,7 @@ sidebar.addPanel({
   id: 'click',
   tab: '<i class="fa fa-info"></i>',
   title: "<h2 id='sidebar-title'>Info</h2>",
-  pane: "<h3>Karta svjetske prirodne i kulturne baštine</h3><p style='padding-right:50px;text-align:justify'>Karta koja prikazuje lokacije svih prirodnih i kulturnih dobra koja su međunarodno priznata te koja su izvanredne i univerzalne vrijednosti koja su kao takva podvrgnuta i posebnomu režimu zaštite i očuvanja. <br><a href='https://enciklopedija.hr/natuknica.aspx?ID=59130'>doznaj više...</a></p><p></p><p>&copy;2022&nbsp;Leksikografski zavod Miroslav Krleža. <br>Sva prava pridržana.</p><p><strong>Urednice<br></strong>Irina Starčević Stančić (voditeljica), Cvijeta Kraus</p><p><strong>Programsko-informatička rje&scaron;enja i upis podataka</strong><br>Josip Mihaljević</p>",
+  pane: "<h3>Karta svjetske prirodne i kulturne baštine</h3><p style='padding-right:50px;text-align:justify'>Karta koja prikazuje lokacije svih prirodnih i kulturnih dobra koja su međunarodno priznata te koja su izvanredne i univerzalne vrijednosti koja su kao takva podvrgnuta i posebnomu režimu zaštite i očuvanja. <br><a href='https://enciklopedija.hr/natuknica.aspx?ID=59130'>doznaj više...</a></p><p></p><p>&copy;"+new Date().getFullYear()+"&nbsp;Leksikografski zavod Miroslav Krleža. <br>Sva prava pridržana.</p><p><strong>Urednice<br></strong>Irina Starčević Stančić (voditeljica), Cvijeta Kraus</p><p><strong>Programsko-informatička rje&scaron;enja i upis podataka</strong><br>Josip Mihaljević</p>",
 });
 
   map.on("click", function () {
