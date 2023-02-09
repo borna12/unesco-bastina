@@ -293,7 +293,7 @@ var statusFilterButton = L.control
     data: ['kulturna baština', 'prirodna baština', 'kulturna i prirodna baština'],
     filterOnEveryClick: true,
     icon: '<i class="fa fa-filter"></i>',
-    clearText:'isključi filtere'
+    clearText:'prikaži sve'
   })
   .addTo(releatedUsageMap);
 
